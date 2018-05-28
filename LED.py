@@ -1,10 +1,11 @@
+#Use this command to install pynetworktables "pip install pynetworktables"
 from networktables import NetworkTables
+#Use this command to install pySerial "pip install pyserial"
 import serial
-import random
 import time
 import logging
 #python -m serial.tools.list_ports (run this command in command line to list Ports)
-#On Windows ports will look like COM3, Linux will be usr/
+#On Windows ports will look like COM3, Linux will look like /dev/ttyUSB0
 ser = serial.Serial('COM3', 9600, timeout = 1)
 #Confirms Serial was set up properly
 print(ser.name)
